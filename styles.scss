@@ -30,13 +30,19 @@ $Aureus: #aa2222;
 
 
 #home_container {
-  background: #18110a; /* Light Brown/Tan */
-  height: 100vh;
+  background: url(./assets/images/leather_1_@2X.png) repeat center fixed;
+  height: 96vh;
   margin: 1%;
 }
 
+#overlay {
+  background: linear-gradient(#18110a, #34210ecd);
+  margin: -1%;
+  height: 100vh;
+}
+
 #home_container h1 {
-  margin-top: 0;
+  margin: 1vh 0 0 5vw;
   color: #bdc6bc;
   text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
   font-family: nosifer, fantasy;
@@ -45,17 +51,18 @@ $Aureus: #aa2222;
 }
 
 #home_header h1 a {
-    color: $Aureus;
-    text-shadow: 2px 2px 0 black, 3px 3px 0 white;
-    cursor: pointer;
-    text-decoration: none;
-  }
+  color: $Aureus;
+  text-shadow: 2px 2px 0 black, 3px 3px 0 white;
+  cursor: pointer;
+  text-decoration: none;
+}
 
 #moon_image {
   height: 40vh;
   opacity: 0.8;
   position: absolute;
   right: 5%;
+  top: 2%;
 }
 
 /* NOTE: DO NOT DELETE */
@@ -65,7 +72,6 @@ $Aureus: #aa2222;
     animation: App-logo-spin infinite 120s linear;
   }
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -75,11 +81,43 @@ $Aureus: #aa2222;
   }
 }
 
+#wolf-image {
+  height: 60vh;
+  position: absolute;
+  bottom: 1%;
+  left: 13vw;
+}
+
+nav {
+  // border: $Aureus solid 3px;
+  position: absolute;
+  bottom: 25vh;
+  right: 5vw;
+
+  li a {
+    color: #bdc6bc;
+    // color: #facfba;
+    text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
+    font-family: nosifer, fantasy;
+    letter-spacing: 1vmin;
+    font-size: calc(10px + 2vmin);
+  }
+  li a:hover {
+    color: $Aureus;
+    text-shadow: 2px 2px 0 black, 3px 3px 0 white;
+  }
+  
+}
+
+
 #copyright {
-  color: #bdc6bc;
-  text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
+  // color: #bdc6bc;
+  color: black;
+  // text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
+  text-shadow: 0 0 10px #bdc6bc;
   font-family: nosifer, fantasy;
   position: absolute;
   bottom: 0;
   right: 2%;
+  font-size: .75em;
 }

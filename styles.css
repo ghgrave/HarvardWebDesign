@@ -5,14 +5,19 @@
 }
 
 #home_container {
-  background: #18110a;
-  /* Light Brown/Tan */
-  height: 100vh;
+  background: url(./assets/images/leather_1_@2X.png) repeat center fixed;
+  height: 96vh;
   margin: 1%;
 }
 
+#overlay {
+  background: linear-gradient(#18110a, #34210ecd);
+  margin: -1%;
+  height: 100vh;
+}
+
 #home_container h1 {
-  margin-top: 0;
+  margin: 1vh 0 0 5vw;
   color: #bdc6bc;
   text-shadow: 2px 2px 0 black, 3px 3px 0 #aa2222;
   font-family: nosifer, fantasy;
@@ -32,6 +37,7 @@
   opacity: 0.8;
   position: absolute;
   right: 5%;
+  top: 2%;
 }
 
 /* NOTE: DO NOT DELETE */
@@ -49,13 +55,38 @@
     transform: rotate(360deg);
   }
 }
-#copyright {
+#wolf-image {
+  height: 60vh;
+  position: absolute;
+  bottom: 1%;
+  left: 13vw;
+}
+
+nav {
+  position: absolute;
+  bottom: 25vh;
+  right: 5vw;
+}
+nav li a {
   color: #bdc6bc;
   text-shadow: 2px 2px 0 black, 3px 3px 0 #aa2222;
+  font-family: nosifer, fantasy;
+  letter-spacing: 1vmin;
+  font-size: calc(10px + 2vmin);
+}
+nav li a:hover {
+  color: #aa2222;
+  text-shadow: 2px 2px 0 black, 3px 3px 0 white;
+}
+
+#copyright {
+  color: black;
+  text-shadow: 0 0 10px #bdc6bc;
   font-family: nosifer, fantasy;
   position: absolute;
   bottom: 0;
   right: 2%;
+  font-size: 0.75em;
 }
 
 /*# sourceMappingURL=styles.css.map */
