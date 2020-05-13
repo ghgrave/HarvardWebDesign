@@ -1,0 +1,85 @@
+// #palette {
+//   color: #221111; /* Spanish Shadow */
+//   color: #772222; /* Sloppy */
+//   color: #bb4433; /* Spanish Pink */
+//   color: #ffbb99; /* Peacht Keane */
+//   color: #dd6655; /* Coral */
+//   color: #9f3621; /* Dark Orange */
+//   color: #8e755c; /* Light Brown/Tan */
+//   color: #ebf1b8; /* Ooze - light green */
+//   color: #665511; /* DarkShi#$% */
+
+ 
+//   color: #000000; /* black */
+//   color: #aa2222; /* Aureus Aureus Aureum */
+//   color: #bdc6bc; /* Full Moon */
+//   font-family: creepster, fantasy;
+//   font-family: butcherman, fantasy;
+//   font-family: eater, fantasy;
+//   font-family: nosifer, fantasy;
+// }
+
+$Aureus: #aa2222;
+
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+
+
+#home_container {
+  background: #18110a; /* Light Brown/Tan */
+  height: 100vh;
+  margin: 1%;
+}
+
+#home_container h1 {
+  margin-top: 0;
+  color: #bdc6bc;
+  text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
+  font-family: nosifer, fantasy;
+  letter-spacing: 2vmin;
+  font-size: calc(40px + 2vmin);
+}
+
+#home_header h1 a {
+    color: $Aureus;
+    text-shadow: 2px 2px 0 black, 3px 3px 0 white;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+#moon_image {
+  height: 40vh;
+  opacity: 0.8;
+  position: absolute;
+  right: 5%;
+}
+
+/* NOTE: DO NOT DELETE */
+/* cause the moon to spin on landing page */
+@media (prefers-reduced-motion: no-preference) {
+  #moon_image {
+    animation: App-logo-spin infinite 120s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#copyright {
+  color: #bdc6bc;
+  text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
+  font-family: nosifer, fantasy;
+  position: absolute;
+  bottom: 0;
+  right: 2%;
+}
