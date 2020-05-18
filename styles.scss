@@ -27,17 +27,19 @@ $Aureus: #aa2222;
   border: none;
 }
 
+body {
+  height: 100vh;
+}
+
 
 
 #home_container {
-  background: url(./assets/images/leather_1_@2X.png) repeat center fixed;
+  background: #18110a url(./assets/images/leather_1_@2X.png) repeat center fixed;
   height: 96vh;
-  margin: 1%;
 }
 
-#overlay {
+.overlay {
   background: linear-gradient(#18110a, #34210ecd);
-  margin: -1%;
   height: 100vh;
 }
 
@@ -50,6 +52,14 @@ $Aureus: #aa2222;
   font-size: calc(40px + 2vmin);
 }
 
+#home_container img {
+  margin: 2vh 0 0 0;
+}
+
+// #home_header {
+//   margin-top: 2%;
+// }
+
 #home_header h1 a {
   color: $Aureus;
   text-shadow: 2px 2px 0 black, 3px 3px 0 white;
@@ -57,12 +67,21 @@ $Aureus: #aa2222;
   text-decoration: none;
 }
 
+#moon_container {
+  width: 100%;
+  border: yellow 1px solid;
+}
+
 #moon_image {
-  height: 40vh;
+  border: blue 1px solid;
+  width: 100%;
+  height: 100%;
+  margin: 2% 5%;
   opacity: 0.8;
-  position: absolute;
-  right: 5%;
-  top: 2%;
+  float: right;
+  // position: absolute;
+  // right: 5%;
+  // top: 2%;
 }
 
 /* NOTE: DO NOT DELETE */
@@ -81,26 +100,41 @@ $Aureus: #aa2222;
   }
 }
 
+#wolf-nav_container {
+  margin-top: -10vh;
+}
+
+#wolf_container {
+  border: purple 1px solid;
+}
+
 #wolf-image {
-  height: 60vh;
-  position: absolute;
-  bottom: 1%;
-  left: 13vw;
+  width: 80%;
+  height: 55vh;
+  margin: 0 auto;
+  border: green 1px solid;
+  // position: absolute;
+  // bottom: 1%;
+  // left: 13vw;
 }
 
 nav {
-  // border: $Aureus solid 3px;
-  position: absolute;
-  bottom: 25vh;
-  right: 5vw;
+  border: $Aureus solid 1px;
+  // position: absolute;
+  // bottom: 25vh;
+  // right: 5vw;
+
+  ul {
+    margin-top: 35%;
+  }
 
   li a {
     color: #bdc6bc;
     // color: #facfba;
     text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
     font-family: nosifer, fantasy;
-    letter-spacing: 1vmin;
-    font-size: calc(10px + 2vmin);
+    letter-spacing: .5vmin;
+    font-size: calc(8px + 2vmin);
   }
   li a:hover {
     color: $Aureus;
@@ -116,8 +150,72 @@ nav {
   // text-shadow: 2px 2px 0 black, 3px 3px 0 $Aureus;
   text-shadow: 0 0 10px #bdc6bc;
   font-family: nosifer, fantasy;
-  position: absolute;
-  bottom: 0;
-  right: 2%;
-  font-size: .75em;
+  // position: absolute;
+  // bottom: 0;
+  // right: 2%;
+  font-size: 1em;
+  border: 1px red solid;
+  float: right;
+}
+
+
+
+@media screen and (max-width: 450px){
+
+
+  #moon_container {
+    display: none;
+  }
+
+  #wolf-nav_container {
+    margin-top: 0;
+  }
+
+  #wolf_container {
+    margin-top: 3vh;
+  }
+
+  #wolf-image {
+    width: 90%;
+    height: 35vh;
+  }
+
+  nav {
+    ul {
+    margin-top: 3vh;
+    text-align: center;
+    }
+
+
+    li a {
+      letter-spacing: 0;
+      font-size: 2em;
+    }
+    
+  } 
+
+  footer {
+    margin-top: 3vh;
+  }
+}
+
+@media screen and (max-width: 321px){
+  nav {
+    ul {
+    margin-top: 2vh;
+    text-align: center;
+    }
+
+
+    li a {
+      letter-spacing: 0;
+      font-size: 1.5em;
+    }
+    
+  } 
+
+  footer {
+    margin-top: 1vh;
+  }
+
 }
